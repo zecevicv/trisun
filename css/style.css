@@ -10,6 +10,10 @@ body {
   color: #FBAD18;
 }
 
+.text-gray {
+  color: #666666;
+}
+
 /* #Btn
 ================================================== */
 .btn {
@@ -886,5 +890,180 @@ body {
 
   .footer-bottom span {
     display: block;
+  }
+}
+
+/* #Category Banner
+================================================== */
+.category-banner {
+  position: relative;
+  padding-top: 8.85vw;
+  min-height: 25.625vw;
+}
+
+.category-banner .container {
+  width: 32.2%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.category-banner h3 {
+  margin-top: .78vw;
+  margin-bottom: 1.3vw;
+}
+
+.category-banner .bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 76.97%;
+}
+
+.category-banner .bg img,
+.category-banner .bg picture {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .category-banner {
+    padding-top: 21.33vw;
+    min-height: 73.73vw;
+  }
+  
+  .category-banner .container {
+    width: 90%;
+    text-align: left;
+    padding-right: 11vw;
+  }
+  
+  .category-banner h3 {
+    margin-top: 4.66vw;
+    margin-bottom: 1.3vw;
+  }
+  
+  .category-banner .bg {
+    width: 100%;
+  }
+}
+
+/* #Category
+================================================== */
+.category {
+  padding: 4.58vw 0 1.5vw 0;
+  text-align: center;
+}
+
+.category .container {
+  width: 71.6%;
+}
+
+.category .tabs {
+  margin-bottom: 5vw;
+}
+
+.category .tab-navigation {
+  margin-bottom: 3.9vw;
+}
+
+.category .tab-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category .tab-navigation ul li:not(:last-child) {
+  margin-right: 2.6vw;
+}
+
+.category .tab-btn {
+  color: #ADADAD;
+  border-bottom: 3px solid transparent;
+}
+
+.category .tab-btn.active {
+  color: #666666;
+  border-bottom: 3px solid #F6AA18;
+}
+
+.category .tab-panel ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -3.65vw;
+}
+
+.category .tab-panel ul li {
+  flex: 0 0 20%;
+  margin-bottom: 3.65vw;
+}
+
+@media (max-width: 1023.98px) {
+  .category {
+    padding: 8.66vw 0 17.33vw 0;
+  }
+  
+  .category .container {
+    width: 90%;
+  }
+  
+  .category .tabs {
+    margin-bottom: 13.33vw;
+  }
+  
+  .category .tab-navigation {
+    margin-bottom: 10.66vw;
+  }
+  
+  .category .tab-navigation ul li:not(:last-child) {
+    margin-right: 7.33vw;
+  }
+  
+  .category .tab-panel ul {
+    margin-bottom: -8.66vw;
+  }
+  
+  .category .tab-panel ul li {
+    flex: 0 0 50%;
+    margin-bottom: 8.66vw;
+  }
+}
+
+/* #Product Card
+================================================== */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-card .product-img img {
+  width: 8.33vw;
+  height: 7.8vw;
+  margin-bottom: 1.3vw;
+}
+
+.product-card a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.product-card a img {
+  width: 1.4vw;
+  margin-left: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .product-card .product-img img {
+    width: 20.66vw;
+    height: 20.66vw;
+    margin-bottom: 3.33vw;
+  }
+  
+  .product-card a img {
+    width: 5.6vw;
+    margin-left: 2vw;
   }
 }
