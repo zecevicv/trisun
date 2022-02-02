@@ -73,3 +73,23 @@ if (document.querySelector('.category-slider .swiper')) {
     },
   });
 }
+
+/* #Product Slider
+  ======================================================= */
+if (document.querySelector('.product-slider .swiper')) {
+  new Swiper(".product-slider .swiper", {
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 5,
+      }
+    },
+    navigation: {
+      nextEl: ".product-slider .next",
+      prevEl: ".product-slider .prev",
+    },
+  });
+}
