@@ -1382,3 +1382,138 @@ body {
     margin-bottom: 4vw;
   }
 }
+
+/* #Banner
+================================================== */
+.banner {
+  position: relative;
+}
+
+.banner .img img,
+.banner .img picture {
+  width: 100%;
+}
+
+.banner .text {
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  left: 12.5vw;
+  width: 30%;
+}
+
+.banner h1 {
+  margin-bottom: .78vw;
+  line-height: 1.14;
+}
+  
+.banner p {
+  line-height: 1.5;
+}
+
+.why-trisun-page .banner h1 {
+  width: 30%;
+}
+
+@media (max-width: 1023.98px) {
+  .banner .text {
+    top: 21.33vw;
+    left: 5%;
+    width: 90%;
+    transform: none;
+  }
+  
+  .banner h1 {
+    margin-bottom: 4.66vw;
+  }
+  
+  .why-trisun-page .banner h1 {
+    width: 100%;
+  }
+}
+
+/* #Why Trisun
+================================================== */
+.why-trisun {
+  padding-bottom: 7vw;
+}
+
+.why-trisun .container {
+  width: 75%;
+}
+
+.why-trisun h2 {
+  text-align: center;
+  margin-bottom: 2.6vw;
+}
+
+.why-trisun ul {
+  margin-bottom: 4.4vw;
+}
+
+.why-trisun li {
+  border-bottom: 1px solid #FBAD18;
+  display: flex;
+  padding: 2.6vw 0 2vw 0;
+}
+
+.why-trisun .img {
+  flex: 0 0 10vw;
+}
+
+.why-trisun .img img {
+  width: 6.35vw;
+  height: 5.83vw;
+  object-fit: contain;
+  object-position: top left;
+}
+
+.why-trisun .text p {
+  margin: .6vw 0 2.6vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .why-trisun {
+    padding-top: 12vw;
+    padding-bottom: 21.33vw;
+  }
+  
+  .why-trisun .container {
+    width: 90%;
+  }
+  
+  .why-trisun h2 {
+    text-align: left;
+    margin-bottom: 3.33vw;
+  }
+  
+  .why-trisun ul {
+    border-top: 1px solid #FBAD18;
+    width: 81.73vw;
+    margin: 0 auto;
+    margin-bottom: 15.33vw;
+  }
+  
+  .why-trisun li {
+    padding: 6.65vw 0 5.33vw 0;
+  }
+  
+  .why-trisun .img {
+    flex: 0 0 24.66vw;
+  }
+  
+  .why-trisun .img img {
+    width: 20vw;
+    height: 18vw;
+  }
+  
+  .why-trisun .text p {
+    margin: 1.33vw 0 4vw 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4; 
+    -webkit-box-orient: vertical;
+  }
+}
