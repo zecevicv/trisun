@@ -1517,3 +1517,151 @@ body {
     -webkit-box-orient: vertical;
   }
 }
+
+/* #Distributors
+================================================== */
+.distributors {
+  margin-top: 9.6vw;
+  margin-bottom: -6.8vw;
+  position: relative;
+  height: 46.875vw;
+}
+
+.distributors .container {
+  padding-left: 12.5vw;
+  display: flex;
+}
+
+.distributors .text {
+  flex: 0 0 29.16vw;
+}
+
+.distributors .heading {
+  padding-right: 5vw;
+  margin-bottom: 2.6vw;
+}
+
+.distributors h1 {
+  line-height: 1.14;
+  margin-bottom: 1vw;
+}
+
+.distributors .heading p {
+  line-height: 1.5;
+}
+
+.distributors .img {
+  flex-grow: 1;
+}
+
+.distributors .img #map {
+  width: 58.3%;
+  height: 46.875vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.distributors .accordion {
+  margin-left: -1.5vw;
+  width: 26.56vw;
+}
+
+.distributors .collapsible {
+  padding: .78vw 1.5vw;
+  background-color: transparent;
+  color: #313039;
+  transition: all .4s ease;
+}
+
+.distributors .collapsible.show {
+  background-color: #FB894F;
+  color: white;
+}
+
+.distributors .collapse > div {
+  padding-top: .5vw;
+  line-height: 1.5; 
+  width: 20vw;
+}
+
+.distributors .chevron {
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: transform .4s ease;
+}
+
+.distributors .collapsible.show .chevron {
+  transform: rotate(270deg);
+}
+
+@media (max-width: 1023.98px) {
+  .distributors {
+    margin-top: 21.33vw;
+    margin-bottom: 8.6vw;
+    height: auto;
+  }
+  
+  .distributors .container {
+    padding-left: 0;
+    width: 100%;
+    display: block;
+  }
+  
+  .distributors .heading {
+    padding-right: 0;
+    padding-left: 4.4vw;
+    width: 79%;
+    margin-bottom: 4vw;
+  }
+  
+  .distributors h1 {
+    margin-bottom: 2vw;
+  }
+  
+  .distributors .heading p {
+    line-height: 1.5;
+  }
+  
+  .distributors .img #map {
+    width: 100%;
+    height: 58.93vw;
+    position: static;
+  }
+  
+  .distributors .accordion {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .distributors .collapsible {
+    padding: 3.3vw 4.4vw;
+    position: relative;
+  }
+
+  .distributors .collapsible:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: calc(100% - 8.8vw);
+    border-bottom: 1px solid #FD8A4F;
+    transition: border-color .4s ease;
+    transform: translateX(-50%);
+  }
+
+  .distributors .collapsible.show:not(:last-child)::after {
+    border-color: transparent;
+  }
+  
+  .distributors .collapse > div {
+    padding-top: .5vw;
+    width: 85%;
+  }
+
+  .distributors .collapse-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
