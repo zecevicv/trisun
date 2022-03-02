@@ -1809,3 +1809,40 @@ body {
     margin-bottom: 6vw;
   }
 }
+
+/* #Category Packaging
+================================================== */
+.category-packaging-page .category-content {
+  margin-top: -3.5vw;
+}
+
+.category-packaging-page .category-content .bg {
+  background-color: rgba(151, 199, 158, .2);
+}
+
+.category-packaging-page .category-content .bg-top svg *,
+.category-packaging-page .category-content .bg-bottom svg * {
+  fill: #97C79E;
+}
+
+.category-packaging-page .category-content .container {
+  width: 55%;
+}
+
+.category-packaging-page .category-content .col {
+  flex: 0 0 50%;
+}
+
+@media (max-width: 1023.98px) {
+  .category-packaging-page .category-content {
+    margin-top: -27vw;
+  }
+  
+  .category-packaging-page .category-content .container {
+    width: 91%;
+  }
+  
+  .category-packaging-page .category-content .col:last-child p.bold {
+    display: none;
+  }
+}
