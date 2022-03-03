@@ -2185,3 +2185,88 @@ body {
     margin-bottom: 4vw;
   }
 }
+
+/* #About
+================================================== */
+.about {
+  padding: 9.375vw 0 1.8vw 0;
+  display: flex;
+}
+
+.about .text {
+  margin-left: 12.5vw;
+  margin-right: 3.9vw;
+  flex: 0 0 30.30vw;
+}
+
+.about h2 {
+  margin-bottom: 1.2vw;
+}
+
+.about p {
+  line-height: 1.5;
+}
+
+.about p:first-of-type {
+  margin-bottom: 1.2vw;
+}
+
+.about ul {
+  list-style: initial;
+  padding-left: 19px;
+  color: #F18F25;
+  margin: .78vw 0;
+}
+
+.about ul span {
+  color: #313039;
+}
+
+.about .img {
+  flex: 0 0 49vw;
+}
+
+.about .img img {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .about {
+    padding: 20vw 0 7.33vw 0;
+    flex-direction: column-reverse;
+  }
+  
+  .about .text {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+    flex: 0;
+    margin: 0 auto;
+  }
+  
+  .about h2 {
+    margin-bottom: 3vw;
+  }
+  
+  .about p:first-of-type {
+    margin-bottom: 4vw;
+  }
+  
+  .about ul {
+    list-style: initial;
+    padding-left: 19px;
+    color: #F18F25;
+    margin: 4vw 0;
+  }
+  
+  .about .img {
+    flex: 0;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 12vw;
+  }
+  
+  .about .img img {
+    transform: scale(1.09);
+  }
+}
