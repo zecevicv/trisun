@@ -20,7 +20,17 @@ if (document.querySelector('.header')) {
     header.classList.remove('header-scrolled');
   }
 }
-2
+
+/* #Hamburger
+  ======================================================= */
+const headerBtn = document.querySelector('.header-hamburger');
+
+headerBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  header.classList.toggle('show');
+  body.classList.toggle('no-scroll');
+});
 
 /* #Clients Logo Slider
   ======================================================= */
